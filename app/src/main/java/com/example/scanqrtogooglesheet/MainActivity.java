@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 txt_name.setText("");
 
-                Retrofit retrofit = new Retrofit.Builder().baseUrl("https://script.google.com/macros/s/AKfycbwiDcKG7iEVtVkFrhILHGsRTbVNhOnnpqSua6fC055RYScSI7n9gQn6SJ-bW0Ue1UtJ/")
+                Retrofit retrofit = new Retrofit.Builder().baseUrl("https://script.google.com/macros/s/XXXXXXXXXXXXXXXX/")
                         .addConverterFactory(new NullOnEmptyConverterFactory())
                         .addConverterFactory(GsonConverterFactory.create())
                         .build();
@@ -163,14 +163,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-//    private String getTodayDate(){
-//        Calendar cal = Calendar.getInstance();
-//        int year = cal.get(Calendar.YEAR);
-//        int month = cal.get(Calendar.MONTH);
-//        month = month + 1;
-//        int day = cal.get(Calendar.DAY_OF_MONTH);
-//        return makeDateSring(day, month, year);
-//    }
+
     private void initDatePicker() {
         DatePickerDialog.OnDateSetListener dateSetListener = new DatePickerDialog.OnDateSetListener() {
             @Override
@@ -325,7 +318,7 @@ public class MainActivity extends AppCompatActivity {
             try{
 
                 //Enter script URL Here
-                URL url = new URL("https://script.google.com/macros/s/AKfycbxL9ZAukSB0PRp2J1c4aaSuvBJ_fpd6fbSmbSSZ-OJM3XwBDrj_JodRRq-GYCkS6KE-/exec");
+                URL url = new URL("https://script.google.com/macros/s/XXXXXXXXXXXXXXXXX/exec");
 
                 JSONObject postDataParams = new JSONObject();
 
